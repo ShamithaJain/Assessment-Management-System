@@ -1,0 +1,14 @@
+<html>
+<body>
+  <h1>{{displayName}}</h1>
+  <p>Generated at: {{generatedAt}}</p>
+  {{#each sections}}
+    <h2>{{title}}</h2>
+    <ul>
+      {{#each fields}}
+        <li>{{label}}: {{value}}</li>
+      {{/each}}
+    </ul>
+  {{/each}}
+</body>
+</html>

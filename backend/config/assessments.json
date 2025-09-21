@@ -1,0 +1,50 @@
+[
+  {
+    "assessment_id": "A-100",
+    "displayName": "Memory & Attention Assessment",
+    "template": "basicReport",
+    "sections": [
+      {
+        "title": "Participant Details",
+        "fields": [
+          { "label": "Name", "path": "$.participant.name" },
+          { "label": "Age", "path": "$.participant.age" }
+        ]
+      },
+      {
+        "title": "Scores",
+        "fields": [
+          { "label": "Memory Score", "path": "$.responses.memory.score" },
+          { "label": "Attention Score", "path": "$.responses.attention.score" }
+        ]
+      }
+    ]
+  },
+  {
+    "assessment_id": "B-200",
+    "displayName": "Personality Assessment",
+    "template": "basicReport",
+    "sections": [
+      {
+        "title": "Participant Details",
+        "fields": [
+          { "label": "Name", "path": "$.participant.name" },
+          { "label": "Age", "path": "$.participant.age" }
+        ]
+      },
+      {
+        "title": "Traits",
+        "fields": [
+          { "label": "Openness", "path": "$.traits.openness" },
+          { "label": "Conscientiousness", "path": "$.traits.conscientiousness" }
+        ]
+      },
+      {
+        "title": "Summary",
+        "fields": [
+          { "label": "Overview", "path": "$.summary.overview" }
+        ]
+      }
+    ]
+  }
+]
